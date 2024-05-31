@@ -62,3 +62,29 @@ def keyArg(**kwargs):
         
 keyArg(a=1, b=2, c=3)  # Output: a 1, b 2, c 3
 
+
+# Lambda Function Example
+# Demonstrates using lambda functions to create anonymous functions.
+add = lambda x, y: x + y
+print(add(2, 3))  # Output: 5
+
+
+
+# mutable and immutable objects
+# Demonstrates the difference between mutable and immutable objects.
+# Immutable objects: int, float, str, tuple
+# Mutable objects: list, dict, set
+
+def func1(x):
+    x = x + 1
+
+a=5
+
+func1(a)
+print(a)  # Output: 5
+
+func2= lambda x: x.append(11111)
+
+b=[1,2,3,4,5]
+func2(b)
+print(b)  # Output: [1, 2, 3, 4, 5, 11111]
